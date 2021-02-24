@@ -9,3 +9,13 @@ Contributors:
 - Eddie De Los Santos
 - Starasia Wright
 - Luis Filion
+
+Note: Before using this prototype, make sure Node. js is installed on your machine.
+
+Instructions to run the prototype:
+1. Clone this repository
+2. In your command line, run the command `cd project-15`
+3. In your command line, run the command `npm install`
+4. Then run `npm start`
+5. Once successfully compiled, the app will run at `http://localhost:3000/`
+6. Enjoy!
