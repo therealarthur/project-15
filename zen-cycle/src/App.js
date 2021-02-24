@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
+import Map from './map/Map';
 
 class App extends Component {
     // constructor to initialize the default state
@@ -25,11 +26,12 @@ class App extends Component {
     // display a header and paragrap with the text retrieved from the API
     render() {
         return (
-            <div classname="App">
+            <div>
                 <header className="App-header">
                     <h1 className="App-title">Zen Cycle</h1>
                 </header>
                 <p className="App-intro">{this.state.apiResponse}</p>
+                <Map />
             </div>
         );
     }
