@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import './App.css';
 import GoogleMap from './components/GoogleMap';
+import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Feed from './pages/Feed'
+import About from './pages/About'
 // import Map from './map/Map';
 class App extends Component {
     // constructor to initialize the default state
@@ -24,9 +28,14 @@ class App extends Component {
     render() {
         return (
             <div>
-                <header className="App-header">
-                    <h1 className="App-title">Zen Cycle</h1>
-                </header>
+                <Router>
+                    <Navbar/>
+                    <Switch>
+                        <Route path='/' exact component={GoogleMap}/>
+                        <Route path='/feed' component={Feed}/>
+                        <Route path='/about' component={About}/>
+                    </Switch>
+                </Router>
                 <p className="App-intro">{this.state.apiResponse}</p>
                 {/* <Map /> */}
                 <GoogleMap/>
