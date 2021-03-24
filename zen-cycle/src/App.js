@@ -36,7 +36,7 @@ class App extends Component {
                         <Route path='/about' component={About}/>
                     </Switch>
                 </Router>
-                <GoogleMap/>
+                
                 <p className="App-intro">{this.state.apiResponse}</p>
             </div>
         );
